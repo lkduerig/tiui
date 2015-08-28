@@ -1,5 +1,5 @@
 The readme below is copied from the KSS-node readme, https://github.com/kss-node/kss-node
-Please check there for more information
+Please check there for more information, and feel free to update this or join in. Guidelines can be found here: https://wiki.intra.tieto.com/xwiki/bin/view/User+Experience+guidelines/
 
 --
 
