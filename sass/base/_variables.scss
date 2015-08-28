@@ -1,0 +1,50 @@
+// Variables
+//
+// Variables defined by TIUI guidelines.
+//
+// Style guide: base.variables
+
+// These 3 variables are copies of ones used in Compass' Vertical Rhythm module.
+
+// The font size set on the root html element.
+$base-font-size: 13px !default;
+
+// The base line height determines the basic unit of vertical rhythm.
+$base-line-height: 21px !default;
+
+// The length unit in which to output vertical rhythm values.
+// Supported values: px, em, rem.
+$rhythm-unit: 'em' !default;
+
+// Note: This project also makes use of variables from Compass' support
+// module. Documentation for this can be found on the wiki at:
+// https://github.com/JohnAlbin/normalize-scss/wiki
+
+
+// Set this to true to force CSS output to exactly match normalize.css.
+$strict-normalize: true !default;
+
+// The default font family.
+$base-font-family: Arial, sans-serif !default;
+
+// The font sizes for h1-h6.
+$h1-font-size: 2.307    * $base-font-size !default; // 30px.
+$h2-font-size: 1.538  * $base-font-size !default; // 20px;
+$h3-font-size: 1.153 * $base-font-size !default; //15
+$h4-font-size: 1.077    * $base-font-size !default; // 14px.
+$h5-font-size: 0.83 * $base-font-size !default; // 11px.
+$h6-font-size: 0.67 * $base-font-size !default; // 8.7px
+
+
+$label-font-size: 0.769 * $base-font-size !default; // 10px.
+
+// All margins, indentations and other distance elements should be multiples of this base unit.
+$base-unit: 5px;
+
+// The amount lists and blockquotes are indented.
+$indent-amount: 8 * $base-unit !default;
+
+// After the default variables are set, import the required Compass partials.
+@import "compass/support";
+@import "compass/css3/box-sizing";
+@import "compass/typography/vertical_rhythm";

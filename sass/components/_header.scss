@@ -1,0 +1,22 @@
+// Header
+//
+// Styles for header.
+//
+// <header>
+// <div>
+// <nav>
+// <ul class="" ng-click="$event.preventDefault()">
+// <li class="nav-first"><a href="#Home" class="Home" ng-click="active='Home'"><h1>RMT</h1></a></li>
+// <li><a href="#People" class="People" ng-click="active='People'">People</a></li>
+// <li><a href="#Projects" class="Projects" ng-click="active='Projects'">Projects</a></li>
+// <li class="nav-last"><a href="#Board" class="Board" ng-click="active='Board'">Board</a></li>
+// </ul>
+// </nav>
+// </div>
+// </header>
+//
+// .People - The People link.
+// .Projects - The Projects link.
+// .Bored - The Bored tab.
+//
+// Style guide: components.header

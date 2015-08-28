@@ -1,0 +1,55 @@
+// Logos
+//
+// Please refer to <a href="http://intra2.tieto.com/Inside-Tieto/Sales--Marketing-Corner/Tieto-brand/Guidelines-and-templates">Brand Design Guidelines</a> for more usage tips such as minimum logo size and choice between logos.
+//
+// Markup: <div class="logo {{modifier_class}}"></div>
+//
+// .logo--primary-blue      - Primary logotype, most commonly used and placed in the lower right corner. To be used on white background.
+// .logo--primary-white     - Primary logotype, most commonly used and placed in the lower right corner. To be used on a coloured background.
+// .logo--primary-black     - Primary logotype, most commonly used and placed in the lower right corner. Black is to be used on a white background and only in exceptional cases.
+// .logo--secondary-blue    - Secondary logotype, used in top left corner. To be used on white background.
+// .logo--secondary-white   - Secondary logotype, used in top left corner. To be used on a coloured background.
+// .logo--secondary-black   - Secondary logotype, used in top left corner.  Black is to be used on a white background and only in exceptional cases.
+// .logo--tieto-com--blue   - Tieto.com text to be used on white background.
+// .logo--tieto-com--white  - Tieto.com text to be used on a coloured background.
+//
+// Styleguide: components.logo
+
+@mixin bg-image-dimensions($image, $bg-color: transparent) {
+  background: $bg-color image-url($image) no-repeat 0 0;
+  height: image-height($image);
+  width: image-width($image);
+  max-width: 100%;
+}
+
+.logo--primary-blue {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Primary_Blue.png");
+}
+
+.logo--primary-white {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Primary_White.png", $blue);
+}
+
+.logo--primary-black {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Primary_Black.png");
+}
+
+.logo--secondary-blue {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Secondary_Blue.png");
+}
+
+.logo--secondary-white {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Secondary_White.png");
+}
+
+.logo--secondary-black {
+  @include bg-image-dimensions("tieto_logo-png/Tieto_Logo_Secondary_Black.png");
+}
+
+.logo--tieto-com--blue {
+  @include bg-image-dimensions("tieto_logo-png/tieto_com_blue.png");
+}
+
+.logo--tieto-com--white {
+  @include bg-image-dimensions("tieto_logo-png/tieto_com_white.png", $blue);
+}

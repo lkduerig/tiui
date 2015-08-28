@@ -1,0 +1,172 @@
+// Colors
+//
+// The main color in Tieto is blue. There are three complimentary colors for use for different purposes. Usually every application have one main color, others are used for contrast for special elements.
+//
+// Markup: <div class="styleguide-box {{modifier_class}}"></div>
+//
+// .blue-lightest   - \#cce5f4
+// .blue-light      - \#9acaeb
+// .blue            - \#62b3e5
+// .blue-darker     - \#2c89c3
+// .blue-dark       - \#0065a0
+// .red-lightest    - \#eed9e1
+// .red-light       - \#f0b3ca
+// .red             - \#e56385
+// .red-darker      - \#dd3a76
+// .red-dark        - \#d51067
+// .green-lightest  - \#d7e8c4
+// .green-light     - \#bde093
+// .green           - \#6cc04a
+// .green-darker    - \#28a834
+// .green-dark      - \#00833e
+// .orange-lightest - \#ffe1c6
+// .orange-light    - \#ffbe85
+// .orange          - \#f78d2d
+// .orange-darker   - \#e57a18
+// .orange-dark     - \#d75f00
+// .grey-lightest   - \#eeeeee
+// .grey-light      - \#d2d2d2
+// .grey-lighter    - \#c1c1c1
+// .grey            - \#999999
+// .grey-darker     - \#7b7b7b
+// .grey-dark       - \#5e5e5e
+// .grey-darkest    - \#333333
+//
+// Style guide: base.colors
+
+// Brand Colour Spectrum
+//
+// The main color in Tieto is blue. There are three complimentary colors for use for different purposes. Usually every application have one main color, others are used for contrast for special elements.
+// The larger squares (light, medium, dark) are defined by the Brand Guidelines. Smaller (very light, lightly dark) are defined by the UX guidelines, for having more possibilities for fine tuning subtle design decissions. Please refer to Brand Design Guidelines for more information on use of colors for print material.The larger squares (light, medium, dark) are defined by the Brand Guidelines. Smaller (very light, lightly dark) are defined by the UX guidelines, for having more possibilities for fine tuning subtle design decissions. Please refer to Brand Design Guidelines for more information on use of colors for print material.
+//
+// .blue   - \#cce5f4 \#9acaeb \#62b3e5 \#2c89c3 \#0065a0
+// .red    - \#eed9e1 \#f0b3ca \#e56385 \#dd3a76 \#d51067
+// .green  - \#d7e8c4 \#bde093 \#6cc04a \#28a834 \#00833e
+// .orange - \#ffe1c6 \#ffbe85 \#f78d2d \#e57a18 \#d75f00
+//
+// Markup: <div class="styleguide-box small {{modifier_class}}-lightest">.{{modifier_class}}-lightest</div>
+// <div class="styleguide-box large {{modifier_class}}-light">.{{modifier_class}}-light</div>
+// <div class="styleguide-box large {{modifier_class}}">.{{modifier_class}}</div>
+// <div class="styleguide-box small {{modifier_class}}-darker">.{{modifier_class}}-darker</div>
+// <div class="styleguide-box large {{modifier_class}}-dark">.{{modifier_class}}-dark</div>
+//
+// Weight: 1
+//
+// Style guide: base.colors.brand
+
+$blue-lightest: #cce5f4;
+$blue-light: #9acaeb;
+$blue: #62b3e5;
+$blue-darker: #2c89c3;
+$blue-dark: #0065a0;
+
+$red-lightest: #eed9e1;
+$red-light: #f0b3ca;
+$red: #e56385;
+$red-darker: #dd3a76;
+$red-dark: #d51067;
+
+$green-lightest: #d7e8c4;
+$green-light: #bde093;
+$green: #6cc04a;
+$green-darker: #28a834;
+$green-dark: #00833e;
+
+$orange-lightest: #ffe1c6;
+$orange-light: #ffbe85;
+$orange: #f78d2d;
+$orange-darker: #e57a18;
+$orange-dark: #d75f00;
+
+// Additional colors
+//
+// There are a few additional colors, outside the brand color spectrum for example very light blue for backgrounds.
+//
+// Markup: <div class="styleguide-box {{modifier_class}}">.{{modifier_class}}</div>
+//
+// .blue-bg-light - \#e9f0f5
+//
+// Weight: 2
+//
+// Style guide: base.colors.additional
+
+$blue-bg-light: #e9f0f5;
+
+// Greyscale
+//
+// There are multiple grayscale colors all for from light backgrounds to body text color.
+//
+// Markup: <div class="styleguide-box {{modifier_class}}-lightest">.{{modifier_class}}-lightest</div>
+// <div class="styleguide-box small {{modifier_class}}-light">.{{modifier_class}}-light</div>
+// <div class="styleguide-box small {{modifier_class}}-lighter">.{{modifier_class}}-lighter</div>
+// <div class="styleguide-box small {{modifier_class}}">.{{modifier_class}}</div>
+// <div class="styleguide-box small {{modifier_class}}-darker">.{{modifier_class}}-darker</div>
+// <div class="styleguide-box small {{modifier_class}}-dark">{{modifier_class}}-dark</div>
+// <div class="styleguide-box small {{modifier_class}}-darkest">{{modifier_class}}-darkest</div>
+//
+// .grey  - \#eeeeee \#d2d2d2 \#c1c1c1 \#999999 \#7b7b7b \#5e5e5e \#333333
+//
+// Weight: 3
+//
+// Style guide: base.colors.greyscale
+
+$grey-lightest: #eeeeee;
+$grey-light: #d2d2d2;
+$grey-lighter: #c1c1c1;
+$grey: #999999;
+$grey-darker: #7b7b7b;
+$grey-dark: #5e5e5e;
+$grey-darkest: #333333;
+
+// For demonstration only.
+.styleguide-box {
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  float: left;
+  padding: 5px;
+  margin: 5px 2px 0 0;
+  font-family: Courier;
+  font-size: 14px;
+  text-shadow: 1px 1px rgba(0, 0, 0, .8);
+  &.small {
+    width: 80px;
+  }
+  &.large {
+    width: 120px;
+  }
+}
+
+.blue-lightest { background-color: $blue-lightest; }
+.blue-light { background-color: $blue-light; }
+.blue { background-color: $blue; }
+.blue-darker { background-color: $blue-darker; }
+.blue-dark { background-color: $blue-dark; }
+
+.red-lightest { background-color: $red-lightest; }
+.red-light { background-color: $red-light; }
+.red { background-color: $red; }
+.red-darker { background-color: $red-darker; }
+.red-dark { background-color: $red-dark; }
+
+.green-lightest { background-color: $green-lightest; }
+.green-light { background-color: $green-light; }
+.green { background-color: $green; }
+.green-darker { background-color: $green-darker; }
+.green-dark { background-color: $green-dark; }
+
+.orange-lightest { background-color: $orange-lightest; }
+.orange-light { background-color: $orange-light; }
+.orange { background-color: $orange; }
+.orange-darker { background-color: $orange-darker; }
+.orange-dark { background-color: $orange-dark; }
+
+.blue-bg-light { background-color: $blue-bg-light; }
+
+.grey-lightest { background-color: $grey-lightest; }
+.grey-light { background-color: $grey-light; }
+.grey-lighter { background-color: $grey-lighter; }
+.grey { background-color: $grey; }
+.grey-darker { background-color: $grey-darker; }
+.grey-dark { background-color: $grey-dark; }
+.grey-darkest { background-color: $grey-darkest; }

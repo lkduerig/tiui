@@ -1,0 +1,117 @@
+// Layout
+//
+// This documentation should be updated to unclude information about the grid
+// system we are using in the styleguide.
+//
+// Style guide: layout
+//
+//[ng\:cloak],
+//[ng-cloak],
+//[data-ng-cloak],
+//[x-ng-cloak],
+//.ng-cloak,
+//.x-ng-cloak {
+//  display: none !important;
+//}
+//
+//html {
+//  color: $base-font-color;
+//}
+//
+//a {
+//  @include link-colors($blue-light, $blue-dark);
+//  text-decoration: none;
+//}
+//
+//.hidden {
+//  visibility: hidden;
+//}
+//
+//.clearfix {
+//  *zoom: 1;
+//}
+//.clearfix:before {
+//  content: "";
+//  display: table;
+//}
+//.clearfix:after {
+//  content: "";
+//  display: table;
+//  clear: both;
+//}
+//
+//header {
+//  width: 920px;
+//  margin: 0 auto;
+//  position: relative;
+//  background-color: $blue-dark;
+//  color: $white;
+//
+//  > div {
+//    @include centered();
+//    padding: ($base-unit * 2 $base-unit * 5);
+//  }
+//
+//  @include breakpoint($tablet) {
+//    width: 100%;
+//  }
+//
+//  @include breakpoint($mobile) {
+//    width: 100%;
+//  }
+//}
+//
+//main {
+//  position: relative;
+//  width: 920px;
+//  margin: 0 auto;
+//
+//  @include breakpoint($tablet) {
+//    width: 100%;
+//  }
+//
+//  @include breakpoint($mobile) {
+//    width: 100%;
+//  }
+//
+//  .main-container {
+//    @include centered();
+//    padding: ($base-unit * 2);
+//  }
+//
+//  .sections {
+//    .search-submit {
+//      position: relative;
+//
+//      &:before {
+//        content: '\7058';
+//        position: absolute;
+//      }
+//    }
+//  }
+//
+//  .row { margin-bottom: 20px;}
+//
+//  table {
+//    ul{
+//      padding: 0;
+//      margin: 0;
+//      list-style-type: none;
+//    }
+//  }
+//
+//
+//}
+//
+//footer {
+//  width: 920px;
+//  margin: 0 auto;
+//
+//  @include breakpoint($tablet) {
+//    width: 100%;
+//  }
+//
+//  @include breakpoint($mobile) {
+//    width: 100%;
+//  }
+//}

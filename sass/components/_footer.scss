@@ -1,0 +1,16 @@
+// Footer
+//
+// Styles for footer.
+//
+// <footer class="clearfix"></footer>
+//
+// Style guide: components.footer
+
+footer {
+  border-top: 3px solid $blue-light;
+  margin: 2em 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,152 @@
+// Typography
+//
+// Default font family for interfaces is Arial. The body text color is #333 (or darkest gray color as described above). The font size is of course variable but for text paragraphs 13px font size is recommended. Line height is dependent on the font sizes but for body text is 21px (160% of font size).
+//
+// For other purposes the Tieto brand font family Helvetica Neue can be used, but please keep in mind that it is not available on all computers. You can take use of existing Fonts.com license for serving Helvetica Neue as a web font. Please get in touch with Marketing contact persons for that.
+//
+// Markup:
+// <h1>Heading 1</h1>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non orci sit amet libero mattis hendrerit ut ut felis. Lectus turpis, vitae molestie est feugiat laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+// <h2>Heading 2</h2>
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non orci sit amet libero mattis hendrerit ut ut felis. Lectus turpis, vitae molestie est feugiat laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+// <h3>Heading 3
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non orci sit amet libero mattis hendrerit ut ut felis. Lectus turpis, vitae molestie est feugiat laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+// <h4>Heading 4
+// <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non orci sit amet libero mattis hendrerit ut ut felis. Lectus turpis, vitae molestie est feugiat laoreet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+//
+// Styleguide: base.typography
+
+
+body {
+  @include adjust-font-size-to($base-font-size);
+  color: $grey-darkest;
+  font-family: $base-font-family;
+  padding: 3 * $base-unit;
+}
+
+h1 {
+  @include adjust-font-size-to($h1-font-size);
+  color: $blue;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+h2 {
+  @include adjust-font-size-to($h2-font-size);
+  font-weight: bold;
+}
+
+h3 {
+  @include adjust-font-size-to($h3-font-size);
+  font-weight: bold;
+}
+
+h4 {
+  @include adjust-font-size-to($h4-font-size);
+  font-weight: normal;
+}
+
+
+// Tieto's brand guidelines do not actually cover h4 or h5 but we will put them in here, anyway.
+h5 {
+  @include adjust-font-size-to($h5-font-size);
+}
+
+h6 {
+  @include adjust-font-size-to($h6-font-size)
+}
+
+//body {
+//  font-family: Arial, sans-serif;
+//  font-size: 13px;
+//  line-height: 21px;
+//  padding: 15px;
+//}
+
+h1, h2, h3, h4, p {
+//  margin-bottom: 8px;
+  @include trailer(0.25);
+}
+
+//h1 {
+//  color: $blue;
+//  font-size: 30px;
+//  line-height: 48px;
+//  letter-spacing: -1px;
+//  font-weight: bold;
+//}
+//h2 {
+//  font-size: 20px;
+//  line-height: 32px;
+//  font-weight: bold;
+//}
+//h3 {
+//  font-size: 15px;
+//  line-height: 24px;
+//  font-weight: bold;
+//}
+//h4 {
+//  font-size: 14px;
+//  line-height: 23px;
+//  font-weight: normal;
+//}
+
+// Labels and Errors
+//
+// <label class="label">Field label</label>
+// <label class="label error">Field label error</label>
+// <input value="Field error" class="error">
+//
+// Weight: 5
+//
+// Styleguide: base.typography.errors
+
+.label {
+//  font-size: 10px;
+  @include adjust-font-size-to($label-font-size);
+  color: $grey-darker;
+  text-transform: uppercase;
+}
+
+.error {
+  color: $red;
+}
+
+// Links
+//
+// Markup: <a class="{{modifier_class}}" href="#">Here is a {{modifier_class}} link.</a>
+//
+// .disabled  - Disabled link
+// .visited   - Visited link
+// :link      - Default link pseudo-selector
+// :visited   - Visited link pseudo-selector
+// :hover     - Hover pseudo-selector
+// :focus     - Focus pseudo-selector
+// :active    - Active pseudo-selector
+//
+// Weight: 3
+//
+// Styleguide: base.typography.links
+
+
+
+a {
+
+  text-decoration: none;
+  &:link, &.link, &.pseudo-class-link {
+    color: $blue-dark;
+  }
+  &:visited, &.visited, &.pseudo-class-visited {
+    color: $blue;
+  }
+  &:hover, &.hover, &.pseudo-class-hover {
+    color: $red-dark;
+  }
+  &:active, &.active, &.pseudo-class-active {
+    color: $red;
+  }
+  &.disabled {
+    color: $grey-darker;
+    cursor: not-allowed;
+  }
+}

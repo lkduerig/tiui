@@ -1,0 +1,67 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+// Vendor
+//
+// Styles from 3rd party vendors.
+//
+// Style guide: vendor
+@import "breakpoint";
+
+// Base
+//
+// Base styles.
+//
+// Style guide: base
+@import "base/variables";
+@import "base/normalize"; // Nicolas Gallagher's normalize.css
+// @import "compass/reset"; // Eric Meyer's reset 2.0
+// @import "compass/layout/grid-background";
+@import "compass";
+
+@import "base/colors";
+@import "base/mixins";
+@import "base/base";
+@import "base/typography";
+@import "base/print";
+
+// Layout
+//
+// Styles only for layout.
+//
+// Style guide: layout
+
+@import "layout/layout";
+
+
+// Components
+//
+// Styles for reusable components.
+//
+// Style guide: components
+@import "components/header";
+@import "components/buttons";
+//@import "components/content";
+@import "components/footer";
+@import "components/icons";
+@import "components/list";
+@import "components/logo";
+
+// State
+//
+// Styles for different states.
+//
+// Style guide: state
+
+// Theme
+//
+// Theme-specific styles.
+//
+// Style guide: theme
+@import "theme/styleguide";
+
+// Includes styles that were implemented in a hurry and need to be refactored into other partials.
+@import "shame";
+

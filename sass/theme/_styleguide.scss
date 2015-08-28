@@ -1,0 +1,13 @@
+// For styleguide purposes only.
+.kss-main {
+
+  .logo {
+    width: image-width("tieto_logo-png/Tieto_Logo_Primary_Blue.png");
+    height: image-height("tieto_logo-png/Tieto_Logo_Primary_Blue.png");
+    background-size: 100% auto;
+  }
+  .logo--tieto-com--blue, .logo--tieto-com--white {
+    height: ((image-width("tieto_logo-png/Tieto_Logo_Primary_Blue.png") / image-width("tieto_logo-png/tieto_com_blue.png"))) * image-height("tieto_logo-png/tieto_com_blue.png");
+
+  }
+}

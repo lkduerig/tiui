@@ -1,0 +1,47 @@
+// Mixins
+//
+// Our custom mixins.
+//
+// Style guide: base.mixins
+
+@mixin centered($max-width: $desktop) {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+// Font size mixin.
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin css-arrow($direction: right, $color: $blue-medium, $size: 0.4) {
+  width: 0;
+  height: 0;
+  border: {
+    style: solid;
+    width: #{$size}em;
+    color: transparent;
+    #{$direction}-width: 0;
+  }
+  
+  @if $direction == left {
+    $direction: right;
+  }
+  @else if $direction == right {
+    $direction: left;
+  }
+  @else if $direction == bottom {
+    $direction: top;
+  }
+  @else if $direction == top {
+    $direction: bottom;
+  }
+  
+  border-#{$direction}-color: $color;
+}
